@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комментарии</title>
+    <link rel="stylesheet" href="./src/css/style.min.css">
+</head>
+<body>
+
+    <form action="" class="form" id="form" >
+        <div class="title">
+            <label for="">Имя</label><p class="warning">*</p>
+        </div>
+        <input type="text" class="" name="comm__name" id="comm__name" placeholder="Введите ваше имя">
+        <p id="p__name__err" class="error__text disp__none">Не правильно заполнено поле!</p>
+        <div class="title">
+            <label for="">Ваш комментарий</label><p class="warning">*</p>
+        </div>
+        <input type="text" class="" name="comm__text" id="comm__text" placeholder="Введите ваш комментарий">
+        <p id="p__text__err" class="error__text disp__none">Не правильно заполнено поле!</p>
+        <input type="date">
+        <div class="title">
+            <p class="warning">* Обязательные поля</p>
+        </div>
+        <button type="submit" id="btn">Готово</button>
+    </form>
+
+    <main>
+        <div class="container" id="comm-list">
+        </div>
+    </main>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

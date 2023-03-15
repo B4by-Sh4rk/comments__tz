@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .form{
+        margin-top: 20px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 50px;
+        input{
+            background:darkgrey;
+            border: 1px  gray solid;
+            margin: 5px;
+            width: 200px;
+            height: 20px;
+            padding: 5px;
+        }
+        label{
+            margin: 5px 5px 0;
+            width: auto;
+            height: 20px;
+            font-size: 18px;
+        }
+        button{
+            background:darkgrey;
+            border: 1px  gray solid;
+            margin: 5px;
+            width: 212px;
+            height: 32px;
+        }
+        .error__text{
+            margin: 5px 5px 0;
+            width: 200px;
+            font-size: 14px;
+            color: red;
+            padding: 5px;
+        }
+        .error__input{
+            background-color: rgb(255, 217, 217);
+            border: 1px  red solid;
+        }
+    }
+}
+
+.disp__none{
+    display: none;
+}
+
+.warning{
+    color: goldenrod;
+    margin-top: 5px;
+    margin-left: -3px;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+}
+.title:last-of-type{
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        background: white;
+        .comment-box{
+            margin: 10px 5px;
+            background: darkgray;
+            h1{
+                margin: 5px 10px;
+            }
+            p{
+                margin: 5px 10px;
+            }
+            .icons{
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                .like-icon{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('../like.svg');
+                    background-size: cover;
+                }
+                .like-icon:hover{
+                    background-image: url('../likefull.svg');
+                    background-size: cover;
+                    opacity: 50%;
+                }
+                .likefull{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('../likefull.svg');
+                    background-size: cover;
+                }
+                .likefull:hover{
+                    background-image: url('../likefull.svg');
+                    background-size: cover;
+                    opacity: 50%;
+                }
+                .trashcan-icon{
+                    margin-left: 10px;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('../trash.svg');
+                    background-size: cover;
+                }
+                .trashcan-icon:hover{
+                    background-image: url('../trash__hover.svg');
+                }
+            }
+        }
+    }
+}
